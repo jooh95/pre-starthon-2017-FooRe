@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+        <Spinner
+            android:id="@+id/foodCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:entries="@array/country"
+            android:gravity="center"
+            android:layout_gravity="center">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:paddingLeft="40dp"
+        android:paddingRight="20dp"
+        android:paddingTop="50dp">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/searchFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Insert Food Name"
+                android:completionThreshold="1"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/search"
+            android:clickable="true"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <RadioButton
+                    android:id="@+id/korea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Korea"
+                    android:textSize="50dp" />
+
+                <RadioButton
+                    android:id="@+id/china"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="China"
+                    android:textSize="50dp" />
+
+                <RadioButton
+                    android:id="@+id/japan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Japan"
+                    android:textSize="50dp" />
+
+
+                <RadioButton
+                    android:id="@+id/america"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="America"
+                    android:textSize="50dp" />
+
+                <RadioButton
+                    android:id="@+id/southAfrica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="South Africa"
+                    android:textSize="50dp" />
+
+                <RadioButton
+                    android:id="@+id/sudan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudan"
+                    android:textSize="50dp" />
+
+                <RadioButton
+                    android:id="@+id/iraq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iraq"
+                    android:textSize="50dp" />
+
+                <RadioButton
+                    android:id="@+id/israel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Israel"
+                    android:textSize="50dp" />
+
+                <RadioButton
+                    android:id="@+id/italy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Italy"
+                    android:textSize="50dp" />
+
+                <RadioButton
+                    android:id="@+id/spain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spain"
+                    android:textSize="50dp" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
